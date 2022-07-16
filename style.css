@@ -1,0 +1,476 @@
+html,
+body {
+    margin: 0;
+    height: 100vh;
+}
+
+.top_nav.load {
+    position: fixed;
+    width: 100%;
+    overflow: hidden;
+    background-color: lightgray;
+    opacity: 0.8;
+    padding: 5px;
+    animation: 1s ease-out 0s 1 slideInTop; 
+}
+
+
+.top_nav {
+    z-index: 100;
+    position: fixed;
+    width: 100%;
+    overflow: hidden;
+    background-color: lightgray;
+    opacity: 0.8;
+    padding: 5px;
+    /* animation: 1s ease-out 0s 1 fadeIn;  */
+}
+
+.top_nav.refresh {
+        position: fixed;
+        width: 100%;
+        overflow: hidden;
+        background-color: lightgray;
+        opacity: 0.8;
+        padding: 5px;
+        animation: 1s ease-out 0s 1 fadeIn; 
+}
+
+.top_nav a {
+    float: right;
+    color: black;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.top_nav a:hover {
+    background-color: darkgray;
+    color: white;
+}
+
+.home_body {
+    margin: 0;
+    padding: 0;
+    background-color: darkgrey;
+    /* background-image: url(Media/webphoto\ -\ lens\ reflection.jpg); */
+    /* background-size: cover; */
+    /* background-repeat: no-repeat; */
+    /* animation: 1s ease-out 0s 1 slideInGallery;  */
+}
+
+.parallax {
+    background-image: url(Media/4Q7A9358.jpg);
+    height: 100%; 
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .parallax_2 {
+    background-image: url(Media/2021-07.jpg);
+    height: 100%; 
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .parallax_3 {
+    background-image: url(Media/2021-15.jpg);
+    height: 100%; 
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .parallax_4 {
+    background-image: url(Media/20210912_153657.jpg);
+    height: 100%; 
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .parallax_5 {
+    background-image: url(Media/Badlands\ Boardwalk\ Summer\ 2020.jpg);
+    height: 100%; 
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .works_gallery {
+    background-color: blue;
+    height: fit-content;
+    width: 100%; 
+    text-align: center;
+    margin-top: -16px;
+    margin-bottom: -16px; 
+  }
+
+  .timelapse {
+    color: darkgray;
+    height: fit-content; 
+    width: 100%; 
+}
+
+.about_me {
+    color: darkgray;
+    height: fit-content; 
+    width: 100%; 
+    text-align: center;
+}
+
+.contact_form {
+    background-color: rgb(164, 172, 211); 
+    height: 990px; 
+    width: 100%; 
+}
+
+.video_format_1{
+    width: 99.7%; 
+    height: 80vh;
+    margin: 0px;   
+    position: relative;
+    top: 50%;
+    left: 0%;
+    outline: ridge 5px black; 
+  /* margin-top: 0px; Half this element's height   */
+  /* left: 25%;  */
+  /* margin-left: -24%; */
+}
+
+.video_format_2{
+    width: 99.7%; 
+    height: 80vh;
+    margin: 0px; 
+    position: relative;
+    top: 50%;
+    right: 0%;
+    outline: ridge 5px black; 
+  /* margin-top: 0px; Half this element's height   */
+    /* left: 25%;  */
+  /* margin-left: -25%; */
+}
+/* need to condense the gallery photo so there is only about 800px to 600px being handled in each animation shift -- otherwise too large of an image */
+.gallery_bin {
+    /* width: fit-content;  */
+    /* height: fit-content;  */
+    width: 100%; 
+    /* height: 150%; */
+    height: 75vw;
+    background-color: lightgray;
+    background-position: 0% 0%;
+    background-size: 310% 100%;
+    margin: auto; 
+    background-image: url(Media/gallery\ three.jpg); 
+    background-repeat: no-repeat;
+    animation-name: slide;
+    animation-duration: 30s;
+    animation-direction: normal;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+}
+
+@keyframes slide {
+    0% {
+      background-position: 0 0;
+    }
+    16.66% {
+      background-position: 0 0;
+    }
+    33.32% {
+      background-position: 50% 0;
+    }
+    49.98% {
+      background-position: 50% 0;
+    }
+    66.64% {
+      background-position: 100% 0;
+    }
+    83.30% {
+      background-position: 100% 0;
+    }
+    100% {
+      background-position: 0 0;
+    }
+  }
+
+
+  .name_style {
+    position: absolute;
+    /* top: 200px;  */
+    top: 15vw; 
+    left: 30%;
+    /* font-size: 75px; */
+    font-size:5vw;
+    font-family: 'Times New Roman', Times, serif;
+    color: white; 
+    font-style: italic;
+    font-weight: bold; 
+    animation: 1s ease-out 0s 1 text_slide_in_name; 
+    user-select: none;
+}
+
+.quote_style {
+    position: absolute;
+    /* top: 330px;  */
+    top: 25vw; 
+    right: 25%;
+    /* font-size: 40px; */
+    font-size: 3vw;
+    font-family: 'Times New Roman', Times, serif;
+    color: white; 
+    font-style: italic;
+    animation: 1s ease-out 0s 1 text_slide_in_quote; 
+    user-select: none; 
+}
+
+@keyframes text_slide_in_name {
+    0% {
+        left: 0%; 
+    }
+    100% {
+        left: 30%; 
+    }
+}
+
+@keyframes text_slide_in_quote {
+    0% {
+        right: 0%; 
+    }
+
+    100% {
+        right: 25%;
+    }
+}
+
+/* .image { */
+    /* max-width: 100%; */
+    /* max-height: 100%; */
+/* } */
+
+
+/* .gallery { */
+    /* background-image: url(Media/webphoto\ -\ lens\ reflection.jpg); */
+    /* background-size: cover; */
+    /* background-repeat: no-repeat; */
+/* } */
+/*  */
+/* .home_body_two { */
+    /* margin: 0; */
+    /* padding: 0; */
+    /* background-color: darkgrey; */
+    /* background-image: url(Media/4Q7A9358.jpg); */
+    /* background-size: cover; */
+    /* background-repeat: no-repeat; */
+/* } */
+
+.footer {
+    position:relative;
+    left: 0;
+    bottom: 0px; 
+    background-color: darkgray;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    font-size: 20px;
+    box-shadow: 0px 0px 150px 50px rgba(0, 0, 0, 0.55);
+    -webkit-box-shadow: 0px 0px 150px 50px rgba(0, 0, 0, 0.55);
+    -moz-box-shadow: 0px 0px 150px 50px rgba(0, 0, 0, 0.55);
+    border-radius: 10px;
+}
+
+.footer_info {
+    position: relative;
+    top: 35px;  
+} 
+
+/* Page content */
+.content {
+    padding: 16px;
+}
+
+/* The sticky class is added to the header with JS when it reaches its scroll position */
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%; 
+    animation: fadeOut 1s; 
+    background-color: rgba(200, 200, 200, 0.5);
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+.sticky+.content {
+    padding-top: 102px;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: lightgray;
+}
+
+::-webkit-scrollbar-thumb {
+    background: darkgray;
+    border-radius: 5px;
+}
+
+-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+@keyframes slideInTop {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        /* background-color: transparent; */
+        opacity: 0; 
+    }
+    100% {
+        /* background-color: lightgray;  */
+        opacity: 0.8;
+    }
+}
+
+@keyframes fadeOut {
+    100% {
+        background-color: rgba(200, 200, 200, 0.5);
+    }
+    0% {
+        background-color: lightgray; 
+    }
+}
+
+@keyframes slideInGallery {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+.section_format {
+    /* position: relative;  */
+    /* top: 30px;  */
+    /* left: 45%; */
+    /* font-size: 5vw;  */
+    /* color: black; */
+    /* font-family: 'Times New Roman', Times, serif; */
+    /* font-style: italic; */
+    /* font-weight: lighter; */
+}
+
+.gallery_border {
+    position: relative; 
+    top: 50px;  
+    width: 95%; 
+    height: fit-content; 
+    margin: auto;
+    outline: double 5px black; 
+}
+
+
+.container-all{
+    width: vw;
+    margin: 20px auto;
+    height: auto;
+  }
+  .container{
+    position: relative; 
+    left: 10px; 
+    top: -15px; 
+    width: calc(32% - 12px);
+    overflow:hidden;
+    height: fit-content;
+    margin:10px;
+    padding: 0;
+    display:block;
+    position:relative;
+    float:left;
+  }
+  img{
+    width: 100%;
+    transition-duration: .3s;
+    max-width: 100%;
+    display:block;
+    overflow:hidden;
+    cursor:pointer;
+  }
+  .title{
+    position:absolute;
+    display:block;
+    cursor:pointer;
+    top: 35%;
+    display: none;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 1.6em;
+    text-shadow: 1px 5px 10px black;
+    transition-duration: .3s;
+  }
+  .text{
+    position:absolute;
+    top: 70%;
+    cursor:pointer;
+    max-width: 80%;
+    text-align:center;
+    left: 50%;
+    text-shadow: 1px 5px 10px black;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1em;
+    display:none;
+    margin-right: -50%;
+    transition-duration: .3s;
+    transform: translate(-50%, -50%) 
+  }
+  .container:hover img{
+    transform: scale(1.2);
+    transition-duration: .3s;
+    filter: grayscale(50%);
+    opacity: .7;
+  }
+  .container:hover span{
+    color:white;
+    display: block;
+    transition-duration: .3s;
+  }
+  @media only screen and (max-width: 900px) {
+      .container {
+          width: calc(50% - 6px);
+      }
+  }
+  @media only screen and (max-width: 400px) {
+      .container {
+          width: 100%;
+      }
+  }
