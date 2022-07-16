@@ -61,7 +61,7 @@ body {
 }
 
 .parallax {
-    background-image: url(Media/4Q7A9358.jpg);
+    background-image: url(Media/4Q7A9358-min.jpg);
     height: 100%; 
   
     /* Create the parallax scrolling effect */
@@ -72,7 +72,7 @@ body {
   }
 
   .parallax_2 {
-    background-image: url(Media/2021-07.jpg);
+    background-image: url(Media/2021-07-min.jpg);
     height: 100%; 
   
     /* Create the parallax scrolling effect */
@@ -82,7 +82,7 @@ body {
     background-size: cover;
   }
   .parallax_3 {
-    background-image: url(Media/2021-15.jpg);
+    background-image: url(Media/2021-15-min.jpg);
     height: 100%; 
   
     /* Create the parallax scrolling effect */
@@ -93,7 +93,7 @@ body {
   }
 
   .parallax_4 {
-    background-image: url(Media/20210912_153657.jpg);
+    background-image: url(Media/20210912_153657-min.jpg);
     height: 100%; 
   
     /* Create the parallax scrolling effect */
@@ -104,7 +104,7 @@ body {
   }
 
   .parallax_5 {
-    background-image: url(Media/Badlands\ Boardwalk\ Summer\ 2020.jpg);
+    background-image: url(Media/Badlands\ Boardwalk\ Summer\ 2020-min.jpg);
     height: 100%; 
   
     /* Create the parallax scrolling effect */
