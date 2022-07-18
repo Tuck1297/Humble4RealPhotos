@@ -8,24 +8,13 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 
-<header>
-    <!-- <div class="top_nav load" id="top_nav"> -->
-        <!-- add humble4realphotos logo here later -->
-        <!-- <a href="javascript:javascript:$('html, body').animate({scrollTop: 5700}, 1000);">Contact</a> -->
-        <!-- <a href="javascript:javascript:$('html, body').animate({scrollTop: 4350}, 1000);">About Me</a> -->
-        <!-- <a href="javascript:javascript:$('html, body').animate({scrollTop: 3030}, 1000);">Timelapse</a> -->
-        <!-- <a href="javascript:javascript:$('html, body').animate({scrollTop: 1660}, 1000);">Works</a> -->
-        <!-- <a href="javascript:$('html, body').animate({scrollTop: 0}, 1000);">Home</a> -->
-    <!-- </div> -->
-</header>
-
 <body class="home_body">
     <div class="top_nav load" id="top_nav">
         <!-- add humble4realphotos logo here later -->
-        <a href="javascript:javascript:$('html, body').animate({scrollTop: 5700}, 1000);">Contact</a>
-        <a href="javascript:javascript:$('html, body').animate({scrollTop: 4350}, 1000);">About Me</a>
-        <a href="javascript:javascript:$('html, body').animate({scrollTop: 3030}, 1000);">Timelapse</a>
-        <a href="javascript:javascript:$('html, body').animate({scrollTop: 1660}, 1000);">Works</a>
+        <a href="javascript:scroll(4)">Contact</a>
+        <a href="javascript:scroll(3)">About Me</a>
+        <a href="javascript:scroll(2)">Timelapse</a>
+        <a href="javascript:scroll(1)">Works</a>
         <a href="javascript:$('html, body').animate({scrollTop: 0}, 1000);">Home</a>
     </div>
     <div class="gallery_bin">
@@ -33,64 +22,84 @@
         <p class="quote_style">Inspiring others one photo at a time...</p>
     </div>
     <div class="parallax"></div>
-    <div class="works_gallery">
-        <p>Gallery Will Be Here...</p>
-            <!-- <p class="section_format">Works</p> -->
-            <!-- <p style="color: black">Gallery will be placed here...</p> -->
-            <!-- <div class="container-all"> -->
-                <!-- <div class="container"> -->
-                    <!-- <img src="https://bit.ly/2PvlS8Z" alt=""> -->
-                    <!-- <span class="title">Lorem ipsum dolor</span> -->
-                    <!-- <span class="text">Morbi diam viverra mattis sociis magna, habitasse penatibus non lectus</span> -->
-                <!-- </div> -->
-                <!-- <div class="container"> -->
-                    <!-- <img src="https://bit.ly/2PXNumM" alt=""> -->
-                    <!-- <span class="title">Lorem ipsum dolor</span> -->
-                    <!-- <span class="text">Morbi diam viverra mattis sociis magna, habitasse penatibus non lectus</span> -->
-                <!-- </div> -->
-                <!-- <div class="container"> -->
-                    <!-- <img src="https://bit.ly/2KbUszm" alt=""> -->
-                    <!-- <span class="title">Lorem ipsum dolor</span> -->
-                    <!-- <span class="text">Morbi diam viverra mattis sociis magna, habitasse penatibus non lectus</span> -->
-                <!-- </div> -->
-                <!-- <div class="container"> -->
-                    <!-- <img src="https://bit.ly/2FnhYul" alt=""> -->
-                    <!-- <span class="title">Lorem ipsum dolor</span> -->
-                    <!-- <span class="text">Morbi diam viverra mattis sociis magna, habitasse penatibus non lectus</span> -->
-                <!-- </div> -->
-                <!-- <div class="container"> -->
-                    <!-- <img src="https://bit.ly/2FznWrU" alt=""> -->
-                    <!-- <span class="title">Lorem ipsum dolor</span> -->
-                    <!-- <span class="text">Morbi diam viverra mattis sociis magna, habitasse penatibus non lectus</span> -->
-                <!-- </div> -->
-                <!-- <div class="container"> -->
-                    <!-- <img src="https://bit.ly/2zd3HLf" alt=""> -->
-                    <!-- <span class="title">Lorem ipsum dolor</span> -->
-                    <!-- <span class="text">Morbi diam viverra mattis sociis magna, habitasse penatibus non lectus</span> -->
-                <!-- </div> -->
-            <!-- </div> -->
+    <div id="works_gallery" class="works_gallery">
+        <div class="header_gallery">
+            <p style="margin: auto; font-size: 5vw; font-weight: bold; font-family:'Times New Roman', Times, serif; text-transform: uppercase; ">Works</p>
+        </div>
+        <br>
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+               <div class="numbertext">1 / 6</div>
+               <img src="Media/2021-15-min.jpg" style="width:100%; height:100%;">
+               <span>
+                <h1 style="position:relative; top: 100px; font-size: 4vw;">Lake Superior Shore - Tettegouche State Park</h1>
+                <p style="position:relative; top: 100px; font-size: 2vw;">The waves become more rigid as the storm rolls in...</p>
+               </span>
+               </div>
+               <div class="mySlides fade">
+                  <div class="numbertext">2 / 6</div>
+                  <img src="Media/Buffalo Roundup Fall 2020 Photo 2-min.jpg" style="width:100%; height:100%;">
+                  <span>
+                    <h1 style="position:relative; top: 100px; font-size: 4vw;">Buffalo Roundup - Custer State Park</h1>
+                <p style="position:relative; top: 100px; font-size: 2vw;">The flags of the US fly as the modern cowboys and cowgirls round up Custer State Park's Buffalo...</p>
+                  </span>
+               </div>
+               <div class="mySlides fade">
+                  <div class="numbertext">3 / 6</div>
+                  <img src="Media/Fireworks Delano-min.jpg" style="width:100%; height:100%;">
+                  <span>
+                    <h1 style="position:relative; top: 100px; font-size: 4vw;">Delano Minnesota Firework Show</h1>
+                <p style="position:relative; top: 100px; font-size: 2vw;">Claiming to be one of the largest in Minnesota is Delano and their amazing firework display...</p>
+                  </span>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">4 / 6</div>
+                    <img src="Media/Grand Premial Thermalpool Yellowstone August 2021-min.jpg" style="width:100%; height:100%;">
+                    <span>
+                      <h1 style="position:relative; top: 100px; font-size: 4vw;">Yellowstone National Park - Grand Premial Thermalpool</h1>
+                  <p style="position:relative; top: 100px; font-size: 2vw;">The colors found in Yellowstone's Thermal Pools are something to be cherished...</p>
+                    </span>
+                  </div>
+                  <div class="mySlides fade">
+                    <div class="numbertext">5 / 6</div>
+                    <img src="Media/IMG_20211230_112712_372-min.jpg" style="width:100%; height:100%;">
+                    <span>
+                      <h1 style="position:relative; top: 100px; font-size: 4vw;">Milky Way</h1>
+                  <p style="position:relative; top: 100px; font-size: 2vw;">A close up shot of a portion of the Milky Way Nebula is something to behold...</p>
+                    </span>
+                  </div>
+                  <div class="mySlides fade">
+                    <div class="numbertext">6 / 6</div>
+                    <img src="Media/1 -365 Challenge - Rice Lake -  01-04-2021-min.jpg" style="width:100%; height:100%;">
+                    <span>
+                      <h1 style="position:relative; top: 100px; font-size: 4vw;">Winter Sunset - Rice Lake Minnesota</h1>
+                  <p style="position:relative; top: 100px; font-size: 2vw;">Every winter a path is plowed out over the frozen Rice Lake located in Maple Grove Minnesota...</p>
+                    </span>
+                  </div>
+               <a class="prev" onclick="plusSlides(-1)">❮</a>
+               <a class="next" onclick="plusSlides(1)">❯</a>
+         </div>
+         <br><br><br>
     </div>
     <div class="parallax_2"></div>
-    <div class="timelapse">
-            <!-- <p class="section_format">Timelapse</p> -->
-            <!-- <p style="color: black">video links will be placed here...</p> -->
-            <iframe class="video_format_1" src="https://www.youtube.com/embed/6AT5_ISlt_E"
+    <div id="timelapse" class="timelapse">
+            <iframe class="video_format_1" src="https://www.youtube.com/embed/jnXhA94vq0U"
             title="YouTube video player" frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen></iframe>
-            <iframe class="video_format_2" src="https://www.youtube.com/embed/6AT5_ISlt_E"
+            <iframe class="video_format_2" src="https://www.youtube.com/embed/sKzSQrKq9IQ"
             title="YouTube video player" frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen></iframe>
             <!-- <br><br><br><br><br> -->
     </div>
     <div class="parallax_3"></div>
-    <div class="about_me">
+    <div id="about_me" class="about_me">
              <!-- <p class="section_format">About Me</p> -->
-            <p style="color: black">Coming Soon...</p>
+            <p style="color: black">About me - Coming soon. Until then check out my instagram page @humble4realphotos</p>
     </div>
     <div class="parallax_4"></div>
-    <div class="contact_form">
+    <div id="contact_form" class="contact_form">
         <div class="gallery_border">
             <!-- <p class="section_format">Contact</p> -->
             <!-- <p style="color: black">Contact form will be placed here...</p> -->
@@ -109,20 +118,6 @@
             <p class="footer_info">Humble4RealPhotos 2022</p>
         </div>
     </div>
-    <!-- <div class="content"> -->
-    <!-- <br><br><br><br><br><br><br><br> -->
-    <!-- <br><br><br><br><br><br><br><br> -->
-    <!-- <br><br><br><br><br><br><br><br> -->
-    <!-- <br><br><br><br><br><br><br><br> -->
-    <!-- <br><br><br><br><br><br><br><br> -->
-
-    <!-- <div class="footer"> -->
-    <!-- <p class="footer_info">Humble4RealPhotos 2022</p> -->
-    <!-- </div> -->
-    <!-- </div> -->
-
-
-
 </body>
 
 <footer></footer>
