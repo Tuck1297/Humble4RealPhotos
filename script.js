@@ -29,15 +29,6 @@ function removeHeaderAnimation() {
   setTimeout(() => top_nav.classList.remove('load'), 1000);
 }
 
-
-// still left to finish
-
-// format of gallery of 6 images --- or more
-// about me information -- add animation link to instagram here
-// still have problem with updating top navigation links upon website load -- maybe restrict scrolling until all images are loaded - possibility add buffering css icon
-
-// need photo for about me page -- use one of facebook profile photos - maybe grand teton photo
-
 var slideIndex = 1;
 showSlides(slideIndex);
 function plusSlides(n) {
@@ -100,3 +91,4 @@ function scroll(num) {
   // scrolled_loaded = true; 
   // scroll(0);
 // })
+
