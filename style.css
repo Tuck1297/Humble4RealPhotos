@@ -61,7 +61,7 @@ body {
 }
 
 .parallax {
-    background-image: url(Media/4Q7A9358-min.jpg);
+    background-image: url(Media/web-1.jpg);
     height: 100%; 
   
     /* Create the parallax scrolling effect */
@@ -72,7 +72,7 @@ body {
   }
 
   .parallax_2 {
-    background-image: url(Media/2021-07-min.jpg);
+    background-image: url(Media/web-2.jpg);
     height: 100%; 
   
     /* Create the parallax scrolling effect */
@@ -82,7 +82,7 @@ body {
     background-size: cover;
   }
   .parallax_3 {
-    background-image: url(Media/2021-15-min.jpg);
+    background-image: url(Media/web-3.jpg);
     height: 100%; 
   
     /* Create the parallax scrolling effect */
@@ -93,7 +93,7 @@ body {
   }
 
   .parallax_4 {
-    background-image: url(Media/20210912_153657-min.jpg);
+    background-image: url(Media/web-4.jpg);
     height: 100%; 
   
     /* Create the parallax scrolling effect */
@@ -104,7 +104,7 @@ body {
   }
 
   .parallax_5 {
-    background-image: url(Media/Badlands\ Boardwalk\ Summer\ 2020-min.jpg);
+    background-image: url(Media/web-5.jpg);
     height: 100%; 
   
     /* Create the parallax scrolling effect */
@@ -135,10 +135,12 @@ body {
 }
 
 .about_me {
-    color: tan;
-    height: fit-content; 
+    /* background-color: tan; */
+    background-image: url(Media/white-wood.jpg);
+    height: 600px; 
     width: 100%; 
-    text-align: center;
+    overflow:hidden;
+    /* text-align: center; */
 }
 
 .contact_form {
@@ -576,3 +578,18 @@ body {
   /* .active, .dot:hover { */
      /* background-color: #717171; */
   /* } */
+
+  .insta_button {
+    width: 50px;
+    height: 50px;
+    background: url(Media/instagram.png) no-repeat;
+    background-size: cover;
+    background-color: grey;
+    border-radius: 14px;
+    border: none;
+    cursor: pointer;
+  }
+
+  .insta_button:hover {
+    background-color: white;
+  }
